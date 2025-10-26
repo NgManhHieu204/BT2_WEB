@@ -74,3 +74,73 @@ B5. Fake IP:
 - Kết quả: Mở trình duyệt và truy cập http://localhost hoặc http://nguyenmanhhieu.com
 
 <img width="1013" height="604" alt="image" src="https://github.com/user-attachments/assets/ed54ef2f-70f5-4998-91b7-32ada38b3ff6" />
+
+### 2. Cài đặt nodejs và nodered => Dùng làm backend
+
+B1. Cài đặt Nodejs v20.19.5 vào D:\nodejs
+
+<img width="798" height="677" alt="image" src="https://github.com/user-attachments/assets/897af146-2a0a-406f-bd9b-9e7c5ae76526" />
+
+B2. Cài đặt Nodered: Mở CMD với quyền Admin vào D:\nodejs và chạy lệnh npm install -g --unsafe-perm node-red --prefix "D:\nodejs\nodered"
+
+<img width="793" height="495" alt="image" src="https://github.com/user-attachments/assets/f017a497-1ad6-4005-970a-327c545ab5c6" />
+
+B3. Cài đặt NSSM: Giải nén và Copy nssm.exe vào thư mục D:\Nodejs\Nodered
+
+<img width="807" height="536" alt="image" src="https://github.com/user-attachments/assets/2c43a619-6280-4c19-85b1-bd4326720fc0" />
+
+B4. Tạo file khởi động Node-RED
+
+- Vào Notepad với quyền Admin -> Tạo 1 file mới với nội dung: @echo off REM fix path set PATH=D:\nodejs;%PATH% REM Run Node-RED node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work" %*
+
+- Sau đó lưu với tên run-nodered.cmd vào D:\Nodejs\Nodered
+
+<img width="810" height="570" alt="image" src="https://github.com/user-attachments/assets/74bd5e9e-8041-43da-8aac-ff8a78c06351" />
+
+B5. cài đặt service `a1-nodered`:
+
+- Vào CMD gõ cd /d D:\Nodejs\Nodered
+
+- Chạy lệnh nssm.exe install a1-nodered
+
+- Khi cửa sổ NSSM Service Installer hiện ra:
+   
+   - Path: trỏ tới "D:\Nodejs\Nodered\run-nodered.cmd"
+ 
+   - Startup directory: là D:\Nodejs\Nodered
+ 
+   --> Ấn Install 
+
+- Cài dặt thành công
+
+<img width="619" height="113" alt="image" src="https://github.com/user-attachments/assets/3e9c9701-1a29-4778-8fe3-12b40c9100d8" />
+
+- Chạy lệnh nssm start a1-nodered --> báo The operation completed successfully là thành công
+
+<img width="573" height="92" alt="image" src="https://github.com/user-attachments/assets/d831ff1d-b506-4a1f-8670-4e1544f6839e" />
+
+- Kết quả:
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/dd6b36d7-ed12-48f2-b36e-bb5ab8f670b2" />
+
+### 3. Tạo csdl tuỳ ý trên mssql (sql server 2022), nhớ các thông số kết nối: ip, port, username, password, db_name, table_name
+
+B1. Tạo Database: 
+
+- Dùng code để tạo DB và thông tin User nhanh chóng
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c35cba66-f01b-49c3-ae4d-6a440f77b47f" />
+
+<img width="611" height="140" alt="image" src="https://github.com/user-attachments/assets/38391d01-1254-4b07-96fd-a6a55a370fa3" />
+
+B2. Ghi nhớ thông tin
+
+- IP
+
+<img width="802" height="142" alt="image" src="https://github.com/user-attachments/assets/643ec7dd-ba82-40a6-850c-9b01eb1e49d7" />
+
+- PORT
+
+<img width="504" height="622" alt="image" src="https://github.com/user-attachments/assets/9fd6f511-5fa3-480b-aaa0-8e325e4ceb7b" />
+
+### 4. Cài đặt thư viện trên nodered
