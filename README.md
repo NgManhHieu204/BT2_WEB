@@ -205,7 +205,7 @@ B2. Cấu hình các Node
 
 - Http in:
 
-<img width="703" height="454" alt="image" src="https://github.com/user-attachments/assets/4c180682-89ab-4743-976e-81229ba4add1" />
+<img width="725" height="497" alt="image" src="https://github.com/user-attachments/assets/92aba2bc-710a-4f00-a12a-6254e4bb7526" />
 
 - MSSQL:
 
@@ -213,9 +213,50 @@ B2. Cấu hình các Node
 
 - Function 1:
 
-<img width="912" height="837" alt="image" src="https://github.com/user-attachments/assets/bc49cb2a-105f-42d8-bbe9-70e431de05bf" />
+<img width="1354" height="508" alt="image" src="https://github.com/user-attachments/assets/78a40b2e-fd73-4a0a-b473-0027f74982a3" />
 
-- http response
+- Kết quả:
 
+<img width="725" height="639" alt="image" src="https://github.com/user-attachments/assets/a14ddde5-959d-4ab3-a903-9278c105de69" />
 
+- Truy vấn theo mssv:
 
+<img width="1307" height="680" alt="image" src="https://github.com/user-attachments/assets/69ce0abb-ea31-41d0-93a8-1562fcd632ac" />
+
+- Kết quả:
+
+<img width="861" height="411" alt="image" src="https://github.com/user-attachments/assets/ebd56b1d-b7f7-492f-a3de-70f0a3fbd38d" />
+
+### 6. Tạo giao diện front-end
+
+- Tạo 3 File index.html, hieu.css, hieu.js:
+
+<img width="1445" height="1002" alt="image" src="https://github.com/user-attachments/assets/30718b90-a4c2-4459-afae-55a3f61ee767" />
+
+<img width="1420" height="941" alt="image" src="https://github.com/user-attachments/assets/5a439ebb-5dbf-4d0e-b972-ac5016926daa" />
+
+<img width="1370" height="898" alt="image" src="https://github.com/user-attachments/assets/33b2ee64-b2c9-4952-a119-4da143389b37" />
+
+- Kết quả: Truy cập nguyenmanhhieu.com
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/79b322d5-6405-4dc5-b80e-9207595efeb8" />
+
+- Hiển thị tất cả sinh viên:
+
+<img width="1531" height="981" alt="image" src="https://github.com/user-attachments/assets/cd5d9f3c-9566-4eae-aa2b-aa9517cb1fa3" />
+
+- Tìm kiếm theo mã sinh viên:
+
+<img width="1566" height="960" alt="image" src="https://github.com/user-attachments/assets/b3438695-1902-48d9-b33a-ced4917de354" />
+
+### 7. Nhận xét bài làm của mình
+
+- Qua quá trình làm bài em đã hiểu rõ cách cài đặt và cấu hình Apache, Nodejs, Nodered:
+
+   - Apache được cấu hình làm web server nội bộ, giúp truy cập giao diện qua địa chỉ http://localhost.
+
+   - Node.js được cài đặt trước để làm môi trường chạy cho Node-RED. Node-RED mặc định chạy trên cổng 1880, có giao diện kéo thả rất dễ thao tác.
+
+   - Trong Node-RED, em sử dụng các node cơ bản như HTTP In, Function, MSSQL, và HTTP Response để xử lý yêu cầu và trả kết quả dạng JSON.
+
+- Em đã nắm được cách tạo và triển khai API trong Node-RED bằng cách thực hành trực tiếp trên giao diện
