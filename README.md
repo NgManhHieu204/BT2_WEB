@@ -129,9 +129,7 @@ B1. Tạo Database:
 
 - Dùng code để tạo DB và thông tin User nhanh chóng
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c35cba66-f01b-49c3-ae4d-6a440f77b47f" />
-
-<img width="611" height="140" alt="image" src="https://github.com/user-attachments/assets/38391d01-1254-4b07-96fd-a6a55a370fa3" />
+<img width="1791" height="660" alt="image" src="https://github.com/user-attachments/assets/972880e9-a806-41ff-bf91-73898d393318" />
 
 B2. Ghi nhớ thông tin
 
@@ -144,3 +142,80 @@ B2. Ghi nhớ thông tin
 <img width="504" height="622" alt="image" src="https://github.com/user-attachments/assets/9fd6f511-5fa3-480b-aaa0-8e325e4ceb7b" />
 
 ### 4. Cài đặt thư viện trên nodered
+
+B1. Truy cập Nodered bằng url: http://localhost:1880
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/dd6b36d7-ed12-48f2-b36e-bb5ab8f670b2" />
+
+B2. Cài đặt các thư viện:
+
+- Tại Nodered -> menu -> Manage palette -> install -> Tìm và cài các package sau:
+
+   - Node-red-contrib-mssql-plus
+
+     <img width="886" height="386" alt="image" src="https://github.com/user-attachments/assets/457b5414-8971-46fe-bd3f-60550d64e6c5" />
+
+   - Node-red-node-mysql
+
+     <img width="889" height="356" alt="image" src="https://github.com/user-attachments/assets/26445c72-b7b5-4444-bd12-a7f92ebe5b29" />
+
+   - Node-red-contrib-telegrambot
+
+     <img width="892" height="352" alt="image" src="https://github.com/user-attachments/assets/a44d036e-c236-45f2-a54c-5a54f737890d" />
+
+   - Node-red-contrib-moment
+
+     <img width="885" height="383" alt="image" src="https://github.com/user-attachments/assets/c0dc8493-2323-4d75-9163-c36a7ec8bc0e" />
+
+   - Node-red-contrib-influxdb
+
+      <img width="1010" height="396" alt="image" src="https://github.com/user-attachments/assets/c062f59a-52b3-40ac-b33a-0a9978c0cb9e" />
+
+   - Node-red-contrib-duckdns
+
+      <img width="947" height="411" alt="image" src="https://github.com/user-attachments/assets/a52a5d41-e962-493a-b0e3-eaff79112afc" />
+
+   - Node-red-contrib-cron-plus
+
+     <img width="928" height="413" alt="image" src="https://github.com/user-attachments/assets/bd054615-8ba5-4a92-9275-393594e61866" />
+
+B3. Sửa file D:\nodejs\nodered\work\settings.js:
+
+- Tìm đến chỗ adminAuth, bỏ // ở đầu dòng (8 dòng) 
+
+<img width="1197" height="487" alt="image" src="https://github.com/user-attachments/assets/24e3330b-b966-42ce-b44f-0da40d8c1eb8" />
+
+- Sinh mật khẩu mã hoá mới: dùng Tool: https://tms.tnut.edu.vn/pw.php
+
+<img width="836" height="471" alt="image" src="https://github.com/user-attachments/assets/3fd8fc2d-9a0e-445d-86bc-0934b96a7f63" />
+
+B4. Khởi động lại Nodered
+
+<img width="748" height="278" alt="image" src="https://github.com/user-attachments/assets/4df035d9-8f62-43cf-96fd-d76d60be3ac8" />
+
+B5. Truy cập lại Nodered:
+
+<img width="1526" height="974" alt="Screenshot 2025-10-26 165421" src="https://github.com/user-attachments/assets/0fe36a11-d22d-4bcd-ac94-ed6ea0a18b60" />
+
+### 5. Tạo api back-end bằng nodered
+
+B1. Tại giao diện Nodered - Flow1: Thực hiện kéo thả các node như sau: http in, http response, MSSQL, function
+
+B2. Cấu hình các Node
+
+- Http in:
+
+<img width="703" height="454" alt="image" src="https://github.com/user-attachments/assets/4c180682-89ab-4743-976e-81229ba4add1" />
+
+- MSSQL:
+
+<img width="758" height="718" alt="image" src="https://github.com/user-attachments/assets/389faed2-9de6-4ca2-a823-265d3592eac0" />
+
+- Function 1:
+
+<img width="912" height="837" alt="image" src="https://github.com/user-attachments/assets/bc49cb2a-105f-42d8-bbe9-70e431de05bf" />
+
+- http response
+
+
+
